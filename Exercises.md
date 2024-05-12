@@ -19,7 +19,8 @@ stosując zwory Cramera. Współczynniki należy wczytać z klawiatury.
 
 3. Napisz program obliczający pole odcinka kołowego o zadanym promieniu R oraz kacie rozwarcia α. Promień R oraz kat α (w stopniach) należy wczytać z klawiatury.
 <img src="https://i.imgur.com/D3YJBfL.png" width="100%">
-UWAGA: Argumenty w funkcjach trygonometrycznych musza być podane w radianach, dlatego te_ wczytany kat w stopniach należy przeliczyć na radiany wg wzoru: $$\alpha_{rad} = \frac{\pi\alpha_{st}}{180}$$
+UWAGA: Argumenty w funkcjach trygonometrycznych musza być podane w radianach, dlatego te_ wczytany kat w stopniach należy przeliczyć na radiany wg wzoru:
+$$\alpha_{rad} = \frac{\pi\alpha_{st}}{180}$$
 
 Liczba π ma w języku C++ nazwę M_PI. Aby skorzystać z tej stałej w programie, należy umieścić dyrektywę `#define_USE_MATH_DEFINES`.
 Dyrektywa ta musi poprzedzać dyrektywę `#include <math.h>` którą również należy umieścić w programie.
