@@ -221,16 +221,16 @@ Wynikiem działania programu powinien być czas przetwarzania takiej tablicy z u
 ----
 
 28. Napisz program, który wypełni tablicę liczbami losowymi typu int z przedziału `[a , b]` podanego przez użytkownika. Przyjmij, że maksymalny rozmiar tablicy to 100.
-Rzeczywisty rozmiar n podaje użytkownik (n<=100). Program ma wykonać następujące operacje za pomocą funkcji:
-średnia arytmetyczna elementów tablicy
-liczba wystąpień elementu podanego przez użytkownika
-liczba elementów nieparzystych oraz ich suma
-element minimalny oraz jego indeks
-element maksymalny oraz jego indeks
-para sąsiednich elementów o największej sumie
-element najczęściej występujący w tablicy
-przestawienie kolejności elementów w tablicy (np. pierwszy – ostatni, ostatni –pierwszy itp…)
-kopiowanie tablicy
+- Rzeczywisty rozmiar n podaje użytkownik (n<=100). Program ma wykonać następujące operacje za pomocą funkcji:
+- średnia arytmetyczna elementów tablicy
+- liczba wystąpień elementu podanego przez użytkownika
+- liczba elementów nieparzystych oraz ich suma
+- element minimalny oraz jego indeks
+- element maksymalny oraz jego indeks
+- para sąsiednich elementów o największej sumie
+- element najczęściej występujący w tablicy
+- przestawienie kolejności elementów w tablicy (np. pierwszy – ostatni, ostatni –pierwszy itp…)
+- kopiowanie tablicy
     
 Program powinien zawierać funkcję:
 wczytującą dane:
