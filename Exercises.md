@@ -417,6 +417,7 @@ hint: warto się zastanowić nad wykorzystaniem listy.
 PROJECT:
 
 Napisz program rysowania znakiem ASCII poniższej figury. Program powinien umożliwić:
+
 − wybór znaku kodu ASCII;
 - wczytanie początkowych rozmiarów figury;
 - przesuwanie figury klawiszami ←, →, ↑, ↓; 
