@@ -168,6 +168,274 @@ W przypadku sytuacji błędnych program ma wypisać komunikat: BŁĄD i zakończ
 
 ----
 
+22. Napisz program, który sprawdza, czy wczytany do tablicy char wyraz jest palindromem. Tablica char może przechowywać do 30 znaków.
 
+----
 
-<img src="" width="100%">
+23. . Popraw błędy w następującym kodzie:
+```CPP
+#include <iostream> 
+#include <conio.h>
+int main() {
+ using namespace std;
+short zmienna = 213;
+ 
+ //Wyświetlanie adresu wskaźnika 
+short long * wskaznik = zmienna ;
+cout << "&zmienna=" << zmienna << endl 
+cout << "wskaznik=" << wskaznik << endl;
+ 
+ //Wyświetlanie danych, na które wskazuje adres wskaźnika 
+ cout "Adres zmienna=" << * zmienna << endl;
+ cout << "*wskaznik=" << wskaznik
+ 
+ //Modyfikacja danych, na które wskazuje wskaźnik 
+ cout << "zmienna=" << zmiena << endl;
+* wskaznik = & 50;
+cout << "zmienna=" << zienna << endl;
+ return 0;
+}
+```
+
+----
+
+24. Napisz program porównujący działanie szybkość zapisu i odczytu danych z tablic przy  wykorzystaniu wskaźników oraz bez zastosowania wskaźników. Program powinien pobierać od użytkownika ilość elementów tablicy i dla każdego z elementu przypisać jako wartość numer iteracji oraz dodać do itego elementu 50.
+```CPP
+tablica[i] = i;
+tablica[i]+50;
+``` 
+Wynikiem działania programu powinien być czas przetwarzania takiej tablicy z użyciem wskaźników oraz bez użycia wskaźników.
+
+----
+
+25. Napisz program, który tworzy jednowymiarową tablicę dynamiczną o n elementach typu int oraz oblicza sumę elementów tablicy. Tablica powinna być wypełniana losowymi wartościami o zadanej przez użytkownika ilości.
+
+----
+
+26. Napisz bezargumentową funkcję, która rezerwuje pamięć dla pojedynczej zmiennej typu int i zwraca jako wartość wskaźnik do niej.
+
+----
+
+27. Napisz funkcję otrzymującą jako argumenty wskaźniki do dwóch zmiennych typu int, która zamienia ze sobą wartości wskazywanych zmiennych tylko wtedy, gdy wskazywana przez drugi argument zmienna jest mniejsza od zmiennej wskazywanej przez pierwszy argument.
+
+----
+
+28. Napisz program, który wypełni tablicę liczbami losowymi typu int z przedziału `[a , b]` podanego przez użytkownika. Przyjmij, że maksymalny rozmiar tablicy to 100.
+Rzeczywisty rozmiar n podaje użytkownik (n<=100). Program ma wykonać następujące operacje za pomocą funkcji:
+1. średnia arytmetyczna elementów tablicy
+2. liczba wystąpień elementu podanego przez użytkownika
+3. liczba elementów nieparzystych oraz ich suma
+4. element minimalny oraz jego indeks
+5. element maksymalny oraz jego indeks
+6. para sąsiednich elementów o największej sumie
+7. element najczęściej występujący w tablicy
+8. przestawienie kolejności elementów w tablicy (np. pierwszy – ostatni, ostatni –pierwszy itp…)
+9. kopiowanie tablicy
+    
+Program powinien zawierać funkcję:
+wczytującą dane:
+```CPP
+int A[] czyt_dane(int &n);
+```
+wypisującą tablicę:
+```CPP
+void pisz_tab(int A[ ], int &n);
+```
+
+oraz
+```CPP
+float srednia(int A[ ], int &n);
+int ile(int A[ ], int &n);
+int nieparzyste(int A[ ], int &n);
+int min(int A[ ], int &n);
+int max(int A[ ], int &n);
+void sasiednie(int A[ ], int &n);
+int najczestszy(int A[ ], int &n);
+void przestawianie(int A[ ], int &n);
+void kopiowanie(int A[ ], int B[], int &n); 
+```
+
+----
+
+29. Napisz program, który dla zadanej tabeli będzie realizował algorytm sortowania quicksort. Kod zawierający algorytm sortowania umieść w funkcji
+```CPP
+void sort_quick (int A[], int &n)
+```
+
+----
+
+30. Napisz funkcje o nazwie is_sorted, który jako argumenty przyjmuje tablice typu int, rozmiar tej tablicy oraz znak c. Znak c reprezentuje opcje: r - rosnąco, m - malejąco. Funkcja ma zwracać wartość 1 jeżeli dana tablica jest poprawnie posortowana, zero w przeciwnym przypadku oraz -1 jeżeli wpisana zostanie inna opcja.
+
+----
+
+31. Napisz funkcję `auto iota(int a[], int n, int start) -> void`, która zainicjalizuje tablicę a o rozmiarze n kolejnymi liczbami całkowitymi zaczynając od start.
+Przykład: dla wywołania iota(a, 4, 5) tablica a zawierałaby liczby 5, 6, 7, i 8.
+Przetestuj tę funkcję, pisząc własną funkcję main pobierając parametry od użytkownika.
+W funkcji main wypisz zawartość zainicjalizowanej tablicę.
+
+----
+
+32. Napisz funkcje o nazwie `dec_to_n`, który jako argument będzie przyjmował liczbę naturalną, a w rezultacie będzie wypisywał liczbę w postaci systemu liczbowego o podstawie n (który ma przyjmować jako argument funkcji).
+
+W przypadku sytuacji błędnej program ma wypisać komunikat: BŁĄD.
+
+----
+
+33. Napisz program, który będziesz przyjmował dokolny znak od użytkownika i będzie ze wskazanego znaku tworzył znak większości o domyślnym rozmiarze 5. Czyli dla znaku wejściowego powinniśmy otrzymać w konsoli. 
+```
+*
+  *
+   *
+    *
+     *
+    *
+   *
+  *
+*
+```
+Za pomocną znaków ‘+’ i ‘-‘ na klawiaturze powinna być możliwość zwiększania i zmniejszania rozmiaru prezentowanego znaku. Program powinien być napisany z wykorzystaniem funkcji.
+
+----
+
+34. Napisz program służący do sprawdzenia czy hasło jest wystarczająco silne. Użytkownik wprowadza wartość tekstową, a aplikacja zatwierdzi hasło, jeżeli będzie składało się przynajmniej z 8 znaków, jednego znaku specjalnego, liczby i dużej litery. Jeżeli hasło będzie nie wystarczająco silne użytkownik powinien wprowadzić inne, które też zostanie sprawdzone.
+
+----
+
+35. Napisz program symulujący serię rzutów kostką sześcienną. Niech program prosi o podanie liczby rzutów a następnie wypisze rezultat losowania. Zadbaj o niedeterministyczne zachowanie programu.
+Przykładowa sesja mogłaby wyglądać następująco:
+Podaj liczbę rzutów: 8 
+Wylosowano: 4 2 2 6 1 3 4 1
+
+----
+
+36. Napisz program symulujący losowanie Lotto. Losowane powinno być 6 licz z przedziału 1-49, wyniki losowanie nie mogą się powtórzyć. Wynik proszę zaprezentować w postaci posortowanej.
+
+----
+
+37. Przygotuj plik konfiguracyjny w postaci pliku .txt, który będzie wczytywany przez Twój program.
+Plik konfiguracyjny powinien zawierać dwa parametry znak oraz ilość. Dane w pliku powinny być zapisany w postaci:
+```
+znak=%
+ilosc=55
+```
+Aplikacja powinna pobierać te wartości i wyświetlać znak tyle razy ile zostało to wskazane w pliku konfiguracyjnym. 
+
+----
+
+38. Napisz program, który wygeneruje najpierw jedną liczbę z przedziału 1-1000, a następnie wygeneruje tyle liczb z zakresu 1-999999, które zapisze do pliku dane.txt.
+
+Następnie każda liczba zostanie pobrana z pliku dane.txt i dla każdej z liczb zostanie wykonane dodawanie pojedynczych elementów liczby, wynik dodawania razem z działaniem zostanie zapisany w pliku wynik.txt.
+
+----
+
+39. Napisz program, w którym za pomocą typu wyliczeniowego enum dni będzie przechowywana informacja o 7 dniach tygodnia:
+```CPP
+enum dni {poniedziałek, wtorek, środa, czwartek, piątek, sobota, niedziela};
+```
+Program powinien po uruchomieniu i wpisaniu z klawiatury np. piątek policzyć, ile dni zostało jeszcze do końca tygodnia. Informacja o licznie pozostałych dni do końca tygodnia ma być zwracana przez funkcję, o deklaracji: `int zostalo(dni)`;
+
+----
+
+40. Zaproponuj implementację kolejki z wykorzystaniem tablicy w C++. Program powinien móc realizować podstawowe operacje dla kolejki:
+• Dodawanie na kolejkę
+• Pobieranie z kolejki 
+• Sprawdzanie wielkości kolejki
+• Sprawdzenie czy kolejka jest pełna 
+• Wyświetlenie zawartości kolejki
+
+----
+
+41. Zaproponuj implementację stosu z wykorzystaniem tablicy w C++. Program powinien móc realizować podstawowe operacje dla stosu:
+• Dodawanie na stos
+• Pobieranie ze stosu
+• Sprawdzanie wielkości stosu
+• Sprawdzenie czy stos jest pełny 
+• Wyświetlenie zawartości stos
+
+----
+
+42. 4. Napisz program, w którym utworzona zostanie klasa zawierająca:
+- dwie dowolne zmienne,
+- jedną metodę,
+- konstruktor inicjujący zmienne.
+W funkcji main programu utwórz obiekt klasy i przetestuj działanie.
+
+----
+
+43. W klasie stworzonej w poprzednim zadaniu dodaj metody o tej samej nazwie, ale różnych argumentach – zastosuj mechanizm przeciążania metod. W funkcji main programu przetestuj działanie metod.
+
+----
+
+44. Napisz program, który tworzy klasę Pracownik, o polach: `imię`, `nazwisko`, `ulica`, `nr_domu`, `kod_pocztowy`, `miejscowość`. 
+Napisać funkcję, która wczytuje dane, oraz funkcję wyświetlającą w postaci wizytowki, np.: 
+```
+----------------------
+Jan Kowalski 
+ul. Długa 20 
+00-000 Warszawa 
+---------------------
+```
+
+----
+
+45. Napisz program, który tworzy klasę Rachunek o polach: data, wartosc_netto, podatek, wartosc_brutto. Napisać funkcję, która wczytuje datę, wartość netto, oraz funkcję, która oblicza  wartość podatku oraz wartość brutto dla stawki 23%.
+
+----
+
+46. Napisz program, który tworzy klasę Uczen o polach: imię, nazwisko, liczba_pytan, poprawne_odp. 
+Napisać funkcję, która wczytuje dane, oraz funkcję, która oblicza procent poprawnych odpowiedzi.
+
+----
+
+47. Zaproponuj trzy klasy. Jedna klasa jest bazowa a dwie pozostałe dziedziczą po niej. Przykładowe klasy to: Pojazd, Auto i Motor lub Figura, Prostokąt i Koło lub Istota, Ptak, Gad itp. Dla klasy bazowej stwórz dwie zmienne, a w klasie potomnej przynajmniej jedną. Dla każdej klasy stwórz: minimum dwa konstruktory, jedną metodę realizującą mechanizm przeciążania i jedną metodą realizującą mechanizm polimorfizmu.
+
+----
+
+48. Utwórz obiekt osoba, który będzie zawierał dwa pola:
+```CPP
+string imie;
+string nazwisko;
+int rok_urodzenia
+```
+Twoim zadaniem jest przygotować tak aplikację, żeby przy kopiowaniu obiektów w obiekcie docelowym po kopiowaniu wartość pola imię była zapisana od tyłu. Dla przykładu, jeżeli inicjalnie miała wartość obiekt.imie = „Slawomir” to po skopiowaniu obiekt1.imie =”rimowalS” 
+hint: wykorzystaj konstruktor kopiujący. 
+
+----
+
+49. Napisz program do obsługi książki adresowej. Każdy kontakt to oddzielny obiekt (imię, nazwisko, numer_tel).
+Program ma umożliwiać:
+- zapisanie do 100 kontaktów,
+- odczyt całej książki adresowej,
+- szukanie konkretnej osoby po nazwisku,
+- zapis i odczyt całej książki adresowej do/z pliku tekstowego. 
+Koniecznie użyj funkcji. 
+
+hint: warto się zastanowić nad wykorzystaniem listy.
+
+----
+
+PROJECT:
+
+Napisz program rysowania znakiem ASCII poniższej figury. Program powinien umożliwić:
+− wybór znaku kodu ASCII;
+− wczytanie początkowych rozmiarów figury;
+− przesuwanie figury klawiszami ←, →, ↑, ↓; 
+− powiększanie oraz zmniejszanie rozmiaru figury za pomocą klawiszy + i -; 
+− ograniczenie przesuwania i rozmiarów figury do obszaru ekranu; 
+<img src="https://i.imgur.com/w7h1DpK.png" width="100%">
+
+Uwaga: punkt początkowy (kropka) znajduje się w lewym górnym narożniku ekranu.
+
+----
+
+EXAM:
+
+1. Write a program that takes an array of integers from the user and returns the sum of even numbers in that array.
+
+2. Write a program that takes an array of integers from the user or declares a constant array and returns true if the array is sorted in ascending order, and false otherwise. The numbers do not have to be strictly increasing.
+
+3. Write a program that takes a sequence of 0s and 1s from the user. The program should return a list of positive integers representing the lengths of sequences consisting of 1s in the input list, in order from left to right.
+
+4. Write a program that takes a two-dimensional array of integers from the user or declares a constant NxN array, representing a matrix. The program should calculate and print the sum of elements on the main diagonal (the diagonal going from the top left corner to the bottom right corner) of the matrix.
+
+5. Write a program that takes a list of integers from the user or declares a constant list and finds the longest non-decreasing subsequence (a sequence of consecutive or equal elements) in that list. The program should print this subsequence.
