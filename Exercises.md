@@ -222,15 +222,15 @@ Wynikiem działania programu powinien być czas przetwarzania takiej tablicy z u
 
 28. Napisz program, który wypełni tablicę liczbami losowymi typu int z przedziału `[a , b]` podanego przez użytkownika. Przyjmij, że maksymalny rozmiar tablicy to 100.
 Rzeczywisty rozmiar n podaje użytkownik (n<=100). Program ma wykonać następujące operacje za pomocą funkcji:
-1. średnia arytmetyczna elementów tablicy
-2. liczba wystąpień elementu podanego przez użytkownika
-3. liczba elementów nieparzystych oraz ich suma
-4. element minimalny oraz jego indeks
-5. element maksymalny oraz jego indeks
-6. para sąsiednich elementów o największej sumie
-7. element najczęściej występujący w tablicy
-8. przestawienie kolejności elementów w tablicy (np. pierwszy – ostatni, ostatni –pierwszy itp…)
-9. kopiowanie tablicy
+średnia arytmetyczna elementów tablicy
+liczba wystąpień elementu podanego przez użytkownika
+liczba elementów nieparzystych oraz ich suma
+element minimalny oraz jego indeks
+element maksymalny oraz jego indeks
+para sąsiednich elementów o największej sumie
+element najczęściej występujący w tablicy
+przestawienie kolejności elementów w tablicy (np. pierwszy – ostatni, ostatni –pierwszy itp…)
+kopiowanie tablicy
     
 Program powinien zawierać funkcję:
 wczytującą dane:
@@ -303,6 +303,7 @@ Za pomocną znaków ‘+’ i ‘-‘ na klawiaturze powinna być możliwość z
 
 35. Napisz program symulujący serię rzutów kostką sześcienną. Niech program prosi o podanie liczby rzutów a następnie wypisze rezultat losowania. Zadbaj o niedeterministyczne zachowanie programu.
 Przykładowa sesja mogłaby wyglądać następująco:
+
 Podaj liczbę rzutów: 8 
 Wylosowano: 4 2 2 6 1 3 4 1
 
