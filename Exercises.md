@@ -20,9 +20,12 @@ stosując zwory Cramera. Współczynniki należy wczytać z klawiatury.
 ----
 
 3. Napisz program obliczający pole odcinka kołowego o zadanym promieniu R oraz kacie rozwarcia α. Promień R oraz kat α (w stopniach) należy wczytać z klawiatury.
-<img src="https://i.imgur.com/D3YJBfL.png" width="100%">
+
+![image](https://github.com/user-attachments/assets/52296beb-de99-4609-a012-85db95f790af)
+
 UWAGA: Argumenty w funkcjach trygonometrycznych musza być podane w radianach, dlatego te_ wczytany kat w stopniach należy przeliczyć na radiany wg wzoru:
-<img src="https://i.imgur.com/BH9vw3r.png" width="100%">
+
+![image](https://github.com/user-attachments/assets/f5834d8c-c689-47da-b728-bb5f910606f7)
 
 Liczba π ma w języku C++ nazwę M_PI. Aby skorzystać z tej stałej w programie, należy umieścić dyrektywę `#define_USE_MATH_DEFINES`.
 Dyrektywa ta musi poprzedzać dyrektywę `#include <math.h>` którą również należy umieścić w programie.
@@ -49,7 +52,8 @@ Jeżeli natomiast liczba będzie podzielna przez 3 oraz 5, to program powinien w
 ----
 
 7. Napisz program, który obliczy najmniejszą wspólną wielokrotność dwóch liczb całkowitych a i b dodatnich. Wykorzystaj algorytm:
-<img src="https://i.imgur.com/t4O2uHN.png" width="100%">
+
+![image](https://github.com/user-attachments/assets/1285b714-c0c2-40e2-aba2-0e8a31c8b200)
 
 ----
 
@@ -69,15 +73,19 @@ int nWylosowana = rand() % 100 + 1
 ----
 
 10. Napisz program, który obliczy największy wspólny podzielnik dwóch liczb całkowitych a i b dodatnich. Wykorzystaj algorytm:
-<img src="https://i.imgur.com/DDAOxFB.png" width="100%">
+
+![image](https://github.com/user-attachments/assets/2926fb48-6753-4d9b-be54-57babc3db65e)
 
 ----
 
 11. Napisz program obliczający tygodniowe zarobki brutto i netto pracownika, gdy znana jest kategoria zaszeregowania i liczba przepracowanych godzin w ciągu tygodnia. Dane te należy wczytać z klawiatury. Dla poszczególnych kategorii zaszeregowania obowiązują następujące stawki:
-<img src="https://i.imgur.com/z51r4Qy.png" width="100%">
+
+![image](https://github.com/user-attachments/assets/26d0c7bf-b0f5-4d6b-9313-a934c47c1515)
+
 
 Jeśli pracownik przepracuje więcej niż 40 godzin w ciągu tygodnia, to zapłata za każdą nadgodzinę jest dwukrotnie wyższa od stawki pracownika. Podatek od zarobku jest obliczany wg następującej tabeli:
-<img src="https://i.imgur.com/YKdlUKn.png" width="100%">
+
+![image](https://github.com/user-attachments/assets/6bd18791-8591-4cbe-946f-69d7894d7a78)
 
 Program należy napisać w taki sposób, aby umożliwić wielokrotne jego wykonanie bez konieczności powrotu do edytora.
 
@@ -85,7 +93,8 @@ Program należy napisać w taki sposób, aby umożliwić wielokrotne jego wykona
 
 12. Napisz program obliczający wielkość wygranej przy założeniu, że gracz rzuca kostką dwukrotnie.
 Jeśli p i q oznaczają odpowiednio wyniki pierwszego i drugiego rzutu, to wygrana jest określona według tabeli:
-<img src="https://i.imgur.com/ZsiSesG.png" width="100%">
+
+![image](https://github.com/user-attachments/assets/93f2f028-8baa-41e5-861a-7f34d3b1ddb9)
 
 Ponadto, jeśli wynikami obu rzutów jest 5, to gracz otrzymuje premię w postaci dodatkowych 5 punktów. Program napisz w dwóch wersjach. W wersji pierwszej wyniki rzutów wczytuj z klawiatury. W wersji drugiej wyniki rzutów powinny być losowane. W tym celu skorzystaj z dwóch funkcji:
 ```CPP
@@ -106,7 +115,8 @@ UWAGA 1: Liczba doskonała to taka, dla której suma jej dzielników (nie liczą
 UWAGA 2: Wystarczy sprawdzić podzielniki nie większe niż sqrt(n);
 
 Program należy napisać w taki sposób, aby umożliwić wielokrotne jego wykonanie bez konieczności powrotu do edytora. Możesz wykorzystać poniższy algorytm lub zaproponować własny:
-<img src="https://i.imgur.com/4V4mU6k.png" width="100%">
+
+![image](https://github.com/user-attachments/assets/b985eac7-deb0-4f83-9533-2a0483ada556)
 
 ----
 
@@ -423,7 +433,8 @@ Napisz program rysowania znakiem ASCII poniższej figury. Program powinien umoż
 - przesuwanie figury klawiszami ←, →, ↑, ↓; 
 - powiększanie oraz zmniejszanie rozmiaru figury za pomocą klawiszy + i -; 
 − ograniczenie przesuwania i rozmiarów figury do obszaru ekranu; 
-<img src="https://i.imgur.com/w7h1DpK.png" width="100%">
+
+![image](https://github.com/user-attachments/assets/afe75880-d0ae-4f81-9a99-47270d4ac74a)
 
 Uwaga: punkt początkowy (kropka) znajduje się w lewym górnym narożniku ekranu.
 
